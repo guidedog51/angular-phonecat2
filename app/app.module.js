@@ -13,7 +13,9 @@ var platform_browser_1 = require('@angular/platform-browser');
 var http_1 = require('@angular/http');
 var forms_1 = require('@angular/forms');
 var phone_service_1 = require('./core/phone/phone.service');
+var checkmark_pipe_1 = require('./core/checkmark/checkmark.pipe');
 var phone_list_component_1 = require('./phone-list/phone-list.component');
+var phone_detail_component_1 = require('./phone-detail/phone-detail.component');
 var AppModule = (function () {
     function AppModule() {
     }
@@ -26,6 +28,8 @@ var AppModule = (function () {
             ],
             declarations: [
                 phone_list_component_1.PhoneListComponent,
+                phone_detail_component_1.PhoneDetailComponent,
+                checkmark_pipe_1.CheckmarkPipe
             ],
             providers: [phone_service_1.Phone]
         }), 
